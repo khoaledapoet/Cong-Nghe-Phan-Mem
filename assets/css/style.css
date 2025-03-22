@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-bg: #e3f5f5;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--header-bg);
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+/* ===================== chung ================== */
+.container {
+  width: 1170px;
+  margin: 0 auto; /* căn giữa */
+  max-width: calc(100% - 48px);
+}
+
+a {
+  text-decoration: none; /* bỏ gạch chân */
+}
+
+.btn {
+  display: inline-block;
+  min-width: 120px;
+  background-color: #75f1f1;
+  text-align: center;
+  border-radius: 20px;
+  color: #000000;
+  line-height: 40px; /* Căn giữa chữ theo chiều dọc */
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+/* ===================== header ================== */
+.header__fourece {
+  font-size: 24px; /* Tăng kích thước chữ cho logo "forece" */
+  font-weight: 700; /* Đậm hơn để nổi bật */
+  color: #1e8b8b;
+  margin: 0; /* Xóa margin mặc định */
+}
+
+.header {
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+  z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 30px;
+}
+
+.action__DN,
+.navbar__link {
+  padding: 0px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  line-height: 40px; /* căn giữa theo chiều dọc */
+}
+
+.navbar__link:hover {
+  text-shadow: 2px 2px 4px rgba(119, 218, 218, 0.5);
+  color: rgb(49, 111, 111);
+}
+/*===================== Action: Căn chỉnh "Đăng nhập" và "Đăng ký" ======================= */
+
+.action {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.action__DN {
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  line-height: 40px; /* căn giữa theo chiều dọc */
+}
+
+.action__DN:hover {
+  text-shadow: 2px 2px 4px rgba(119, 218, 218, 0.5);
+  color: rgb(49, 111, 111);
+}
+
+.btn:hover {
+  background-color: #1e8b8b; /* Hiệu ứng hover nhẹ */
+  color: #ffffff;
+}
+
+/* =========================== Main ========================== */
+
+.main__one {
+  margin-top: 20px;
+  text-align: center; /* Căn giữa ảnh */
+}
+
+.main__one__bg {
+  position: relative;
+}
+
+.main__one__img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover; /* Đảm bảo ảnh phủ đầy khung mà không bị méo */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.7); /* Làm mờ ảnh nền một chút (70% độ sáng) */
+}
+
+.main__one__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.main__two {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.main__two__left {
+  color: #101828;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.main__two__right {
+  width: 488px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #475467;
+}
+
+/* ============================main__three================================== */
+.main__three h2 {
+  color: #101828;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  /* text-align: center; Căn giữa tiêu đề */
+}
+
+.main__three {
+  background-color: #ccebee;
+  padding: 55px 0;
+}
+
+.main__three__list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.main__three__item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.main__three__item {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgb(138, 166, 166); /* Viền nhẹ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+}
+
+.main__three__item:hover {
+  transform: translateY(-5px); /* Nhấc lên một chút khi hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Bóng đậm hơn */
+  border-color: #6ad8d4; /* Đổi màu viền khi hover */
+}
+
+.main__three__item p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #475467;
+  line-height: 24px;
+}
+
+.main__three__item__heading {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.main__three__item .action {
+  display: flex;
+  justify-content: center;
+}
+
+.main__three__item .action__DAT {
+  display: inline-block;
+  min-width: 140px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #77dada;
+  text-align: center;
+  border-radius: 20px;
+  color: #000000;
+}
+
+.main__three__item .action__DAT:hover {
+  background-color: #1e8b8b;
+  color: #ffffff;
+}
+
+/* ========================main five===================== */
+
+.main__five {
+  display: flex;
+  background-color: aliceblue;
+  padding: 170px 0;
+}
+
+.main__five__comment__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-width: 100%;
+}
+
+.main__five__comment__top p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #475467;
+}
+
+.main__five__comment__top h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #101828;
+  flex: 1;
+}
+
+.main__five__comment__main {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 30px;
+  border: 1px solid #d1d5db;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.main__five__comment__main p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #475467;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main__five__comment__main h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.main__three__khampha {
+  display: flex;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+/* ======================footer==================== */
+.footer {
+  padding: 100px;
+  background-color: #10375c;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  color: #d1d5db;
+}
+
+.footer__column .header__fourece {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer__heading__1 {
+  margin-top: 20px;
+  color: #e3f5f5;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer__heading__2 {
+  color: #e3f5f5;
+  font-size: 20px;
+  line-height: 28px;
+}
+.footer__list {
+  margin: 20px 0;
+  list-style: none;
+  padding: 0;
+}
+.footer__link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer__item {
+  margin-bottom: 15px;
+}
+
+.footer__link:hover {
+  color: #75f1f1;
+}
