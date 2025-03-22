@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/hotel.css" />
+
+    <title>khách sạn</title>
+  </head>
+  <body style="height: 4200px">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <!-- logo -->
+          <h3 class="header__fourece">fourece</h3>
+
+          <!-- nav -->
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="./trangchu.html" class="navbar__link navbar__link__TC">
+                  Trang chủ</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a href="./khachsan.html" class="navbar__link navbar__link__KS"
+                  >Khách sạn</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a href="./nhahang.html" class="navbar__link navbar__link__NH"
+                  >Nhà hàng</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a href="!#" class="navbar__link navbar__link__MB">Máy bay</a>
+              </li>
+              <li class="navbar__item">
+                <a href="!#" class="navbar__link navbar__link__DT">Du thuyền</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- cta action -->
+          <div class="action">
+            <a href="#!" class="action__DN">Đăng nhập</a>
+            <a href="#!" class="btn action__DK">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main  Banner-->
+    <div class="container">
+      <section class="main__one">
+        <img
+          src="./assets/css/img/khachsan_bg2.jpg"
+          class="main__one__img"
+          alt=""
+        />
+      </section>
+    </div>
+
+    <!-- Form Tìm kiếm -->
+    <section class="main__two">
+      <div class="container">
+        <section class="main__two__item">
+          <form action="main__two__list__form">
+            <h2>Bạn lựa chọn khách sạn nào?</h2>
+            <p>Hàng nghìn khách sạn với mức giá tốt nhất đang chờ bạn</p>
+
+            <div class="main__two__list__form___one">
+              <div class="main__two__list__form___one__item1">
+                <label for="hotel" class="click__search"
+                  >Thành phố, địa điểm:</label
+                >
+                <select name="hotel" id="hotel" class="select__search" required>
+                  <option value="" selected>-Tất cả địa điểm-</option>
+                  <option value="TP.Hồ Chí Minh">TP.Hồ Chí Minh</option>
+                  <option value="Hạ Long">Hạ Long</option>
+                  <option value="Đà nẵng">Đà Nẵng</option>
+                </select>
+              </div>
+
+              <div class="main__two__list__form___one__item2">
+                <label for="sodem" class="click__search">Số đêm ở:</label>
+                <select name="sodem" id="sodem" class="select__search" required>
+                  <option value="1 đêm" selected>-1 đêm-</option>
+                  <option value="2 đêm">2 đêm</option>
+                  <option value="3 đêm">3 đêm</option>
+                  <option value="4 đêm">4 đêm</option>
+                  <option value="5 đêm">5 đêm</option>
+                  <option value="6 đêm">6 đêm</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="main__two__list__form___two">
+              <div class="main__two__list__form___one__item3">
+                <label for="price" class="click__search">Mức giá:</label>
+                <select name="price" id="price" class="select__search" required>
+                  <option value="1 đến 3 triệu" selected>
+                    -1 đến 3 triệu-
+                  </option>
+                  <option value="3 đến 6 triệu">3 đến 6 triệu</option>
+                  <option value="Trên 6 triệu">Trên 6 triệu</option>
+                </select>
+              </div>
+
+              <div class="main__two__list__form___one__item4">
+                <label for="date" class="click__search">Ngày nhận phòng:</label>
+                <input type="date" id="date" class="select__search" required />
+              </div>
+            </div>
+
+            <button class="btn btn__search">Tìm kiếm</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!-- main three -->
+
+    <section class="main_three">
+      <div class="container">
+        <h3 class="discount__heading">Khuyến mãi khi đặt trong hôm nay</h3>
+        <div class="main__three__list">
+          <!-- item1 -->
+          <div class="main__three__item">
+            <h2 class="main__three__item__heading">8% giảm giá khách sạn</h2>
+            <p>Áp dụng cho lần đặt đầu tiên trên Fourece</p>
+
+            <div class="action">
+              <p class="action__p">Fourece8888</p>
+              <a href="#!" class="action__copy">Copy</a>
+            </div>
+          </div>
+
+          <!-- item2 -->
+          <div class="main__three__item">
+            <h2 class="main__three__item__heading">10% giảm giá khách sạn</h2>
+            <p>Áp dụng cho đơn trên 1TR</p>
+
+            <div class="action">
+              <p class="action__p">Fourece101010</p>
+              <a href="#!" class="action__copy">Copy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main four -->
+    <section class="main__four">
+      <div class="container">
+        <div class="main__four__list">
+          <!-- item1 -->
+          <div class="main__four__item">
+            <img src="./assets/css/img/kháchan1.jpg" alt="" />
+            <p>Hạ Long</p>
+            <h3>DeLaSea Phát Linh Hạ Long</h3>
+            <p>326 phòng</p>
+            <p>1,555,000đ / phòng</p>
+
+            <div class="action">
+              <a href="./hotel-detail.php?id=1" class="action__DAT">đặt ngay</a>
+            </div>
+          </div>
+
+          <!-- item2 -->
+          <div class="main__four__item">
+            <img src="./assets/css/img/Citadines Marina Hạ Long.jpg" alt="" />
+            <p>Hạ Long</p>
+            <h3>Citadines Marina Hạ Long</h3>
+            <p>580 phòng</p>
+            <p>1,600,000đ / phòng</p>
+
+            <div class="action">
+              <a href="./hotel-detail.php?id=2" class="action__DAT">đặt ngay</a>
+            </div>
+          </div>
+
+          <!-- item3 -->
+          <div class="main__four__item">
+            <img src="./assets/css/img/Sea Stars Hotel Hạ Long.jpg" alt="" />
+            <p>Hạ Long</p>
+            <h3>Sea Stars Hotel Hạ Long</h3>
+            <p>354 phòng</p>
+            <p>2,300,000đ / phòng</p>
+
+            <div class="action">
+              <a href="./hotel-detail.php?id=3" class="action__DAT">đặt ngay</a>
+            </div>
+          </div>
+
+          <!-- item4 -->
+          <div class="main__four__item">
+            <img src="./css/img/Cozrum Homes - Sonata Residence.jpeg" alt="" />
+            <p>TP Hồ Chí Minh</p>
+            <h3>Cozrum Homes - Sonata Residence</h3>
+            <p>275 phòng</p>
+            <p>508.554đ / phòng</p>
+
+            <div class="action">
+              <a href="./hotel-detail.php?id=4" class="action__DAT">đặt ngay</a>
+            </div>
+          </div>
+
+          <!-- item5 -->
+          <div class="main__four__item">
+            <img src="./assets/css/img/M Village Living Cuu Long.jpeg" alt="" />
+            <p>TP Hồ Chí Minh</p>
+            <h3>M Village Living Cuu Long</h3>
+            <p>200 phòng</p>
+            <p>508.554đ / phòng</p>
+
+            <div class="action">
+              <a href="./hotel-detail.php?id=5" class="action__DAT">đặt ngay</a>
+            </div>
+          </div>
+
+          <!-- item6 -->
+          <div class="main__four__item">
+            <img src="./assets/css/img/Hotel Nikko Saigon.jpeg" alt="" />
+            <p>TP Hồ Chí Minh</p>
+            <h3>Hotel Nikko Saigon</h3>
+            <p>334 phòng</p>
+            <p>5.288.422đ / phòng</p>
+
+            <div class="action">
+              <a href="./hotel-detail.php?id=6" class="action__DAT">đặt ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main five -->
+    <section class="main__five">
+      <div class="container">
+        <div class="main__five__main">
+          <h3 class="main__five__main__heading">
+            Tại sao nên đặt chỗ với fourece
+          </h3>
+          <!-- item 1 -->
+          <div class="main__five__list">
+            <div class="main__five__item">
+              <img src="./assets/css/img/taisao1.webp" alt="" />
+              <h4>
+                Giá rẻ mỗi ngày với ưu đãi đặc biệt dành riêng cho ứng dụng
+              </h4>
+              <p>
+                Đặt phòng qua ứng dụng để nhận giá tốt nhất với các khuyến mãi
+                tuyệt vời!
+              </p>
+            </div>
+            <!-- item 2 -->
+            <div class="main__five__item">
+              <img src="./assets/css/img/taisao2.webp" alt="" />
+              <h4>Phương thức thanh toán an toàn và linh hoạt</h4>
+              <p>
+                Giao dịch trực tuyến an toàn với nhiều lựa chọn như thanh toán
+                tại cửa hàng tiện lợi, chuyển khoản ngân hàng, thẻ tín dụng đến
+                Internet Banking. Không tính phí giao dịch.
+              </p>
+            </div>
+            <!-- item 3 -->
+            <div class="main__five__item">
+              <img src="./assets/css/img/taisao3.webp" alt="" />
+              <h4>Hỗ trợ khách hàng 24/7</h4>
+              <p>
+                Đội ngũ nhân viên hỗ trợ khách hàng luôn sẵn sàng giúp đỡ bạn
+                trong từng bước của quá trình đặt vé
+              </p>
+            </div>
+            <!-- item 4 -->
+            <div class="main__five__item">
+              <img src="./assets/css/img/taisao4.webp" alt="" />
+              <h4>Khách thực, đánh giá thực</h4>
+              <p>
+                Hơn 10.000.000 đánh giá, bình chọn đã được xác thực từ du khách
+                sẽ giúp bạn đưa ra lựa chọn đúng đắn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <!-- item 1 -->
+          <div class="footer__column">
+            <h3 class="header__fourece">fourece</h3>
+            <p class="footer__heading__1">
+              Fourece là nền tảng du lịch cung cấp dịch vụ đặt vé máy bay, du
+              thuyền, khách sạn và nhà hàng cao cấp. Mang đến trải nghiệm sang
+              trọng, tiện nghi và đáng nhớ cho mọi chuyến đi.
+            </p>
+          </div>
+
+          <!-- item 2 -->
+          <div class="footer__column">
+            <h3 class="footer__heading__2">GIỚI THIỆU</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Về chúng tôi</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Chính sách riêng tư</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Điều khoản và điều kiện</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- item 3 -->
+          <div class="footer__column">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Hotline: 09111111111</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Email: info@forece.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- item 1 -->
+          <div class="footer__column">
+            <div class="footer__mangxahoi">
+              <a href="#!" class="footer__mangxahoi__btn"
+                ><svg
+                  width="44px"
+                  height="44px"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  background-color:
+                  #ffffff;
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook icon</title>
+                  <path
+                    d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
